@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task FlowUp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="termsModalLabel">Termos de Uso e Política de Privacidade</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Última atualização:</strong> [Data da Atualização]</p>
+            <p>Bem-vindo ao Task FlowUp. Ao se registrar e usar nossa plataforma, você concorda com estes Termos de Uso e nossa Política de Privacidade.</p>
+            
+            <p class="text-danger small"><strong>AVISO:</strong> Este é um texto de exemplo gerado com base nas funcionalidades do sistema e na LGPD. Ele NÃO substitui a consultoria jurídica. Recomenda-se que um profissional revise este documento.</p>
+
+            <hr>
+            
+            <h5>1. Aceitação dos Termos</h5>
+            <p>Ao marcar a caixa "Eu li e concordo..." e clicar em "Registrar", você celebra um acordo legalmente vinculativo conosco e concorda em cumprir estes Termos.</p>
+
+            <h5>2. Descrição dos Serviços</h5>
+            <p>O Task FlowUp é uma plataforma de gerenciamento de tarefas que permite aos usuários:</p>
+            <ul>
+                <li>Criar, editar, excluir e atribuir tarefas.</li>
+                <li>Comentar em tarefas específicas.</li>
+                <li>Comunicar-se através de um chat de equipe.</li>
+                <li>Visualizar o painel de análise de produtividade.</li>
+            </ul>
+
+            <h5>3. Contas de Usuário</h5>
+            <ul>
+                <li><strong>Cadastro:</strong> Você concorda em fornecer informações verdadeiras e completas durante o registro (Nome de Usuário, E-mail, Senha, Cargo).</li>
+                <li><strong>Segurança:</strong> Você é responsável por manter a confidencialidade de sua senha.</li>
+                <li><strong>Tipos de Conta:</strong> O sistema possui dois níveis de acesso: "Funcionário" e "Administrador".</li>
+            </ul>
+
+            <h5>4. Responsabilidades do Administrador</h5>
+            <p>Se você possui uma conta de "Administrador", você reconhece que tem acesso a funcionalidades avançadas que afetam outros usuários, incluindo:</p>
+            <ul>
+                <li>Acesso ao Log de Atividades de todo o sistema.</li>
+                <li>Capacidade de editar, excluir e forçar a redefinição de senha de outros usuários.</li>
+                <li>Capacidade de "Impersonar" (assumir a sessão) de outros usuários para fins de suporte ou auditoria. Você concorda em usar esse poder de forma ética e apenas quando necessário.</li>
+            </ul>
+
+            <h5>5. Conteúdo do Usuário</h5>
+            <p>Você é o único responsável pelo conteúdo que publica nos comentários das tarefas e no chat da equipe. Você concorda em não publicar conteúdo ilegal, difamatório, odioso ou que infrinja os direitos de terceiros.</p>
+
+            <hr>
+
+            <h4 class="mt-4">Política de Privacidade (LGPD)</h4>
+
+            <h5>6. Coleta de Dados (O que coletamos)</h5>
+            <p>Para operar a plataforma, coletamos os seguintes dados pessoais:</p>
+            <ul>
+                <li><strong>Dados de Identificação:</strong> Nome de usuário, e-mail, cargo (opcional).</li>
+                <li><strong>Dados de Autenticação:</strong> Hash de senha e salt criptográfico (nunca armazenamos sua senha em texto plano).</li>
+                <li><strong>Dados Gerados pelo Uso:</strong>
+                    <ul>
+                        <li>Tarefas, comentários e mensagens de chat que você cria.</li>
+                        <li>Logs de atividade (ex: "Usuário X fez login às 10:00").</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h5>7. Finalidade do Tratamento (Por que coletamos)</h5>
+            <p>Usamos seus dados exclusivamente para:</p>
+            <ul>
+                <li>Fornecer, operar e manter o serviço Task FlowUp.</li>
+                <li>Autenticar seu acesso à plataforma.</li>
+                <li>Atribuir tarefas e identificar quem criou qual conteúdo (tarefas, comentários).</li>
+                <li>Garantir a segurança e auditoria do sistema através de logs (Função de Admin).</li>
+                <li>Permitir a recuperação de senha.</li>
+            </ul>
+
+            <h5>8. Seus Direitos como Titular (LGPD)</h5>
+            <p>Você tem controle sobre seus dados pessoais:</p>
+            <ul>
+                <li><strong>Direito de Acesso e Correção:</strong> Você pode acessar e atualizar seus dados de perfil (nome de usuário, e-mail, cargo) a qualquer momento através da página "Meu Perfil".</li>
+                <li><strong>Direito de Exclusão (Anonimização):</strong> Você pode solicitar a exclusão da sua conta através da "Zona de Perigo" na sua página de perfil. Conforme implementado em nosso sistema:
+                    <ul>
+                        <li>Esta ação é <strong>permanente</strong>.</li>
+                        <li>Seus dados pessoais (nome de usuário, e-mail) serão permanentemente alterados para um valor anônimo (ex: "usuario_anonimizado_123").</li>
+                        <li>Suas mensagens de chat e comentários de tarefas serão apagados ou substituídos por "[removido pelo usuário]".</li>
+                        <li>Isso é feito para manter a integridade dos projetos (as tarefas criadas por você permanecerão, mas atribuídas ao usuário anônimo).</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <h5>9. Compartilhamento e Segurança</h5>
+            <p>Não compartilhamos seus dados pessoais com terceiros. Empregamos medidas de segurança, como hashing de senhas com salt, para proteger suas informações.</p>
+
+            <h5>10. Encerramento da Conta</h5>
+            <p>Sua conta pode ser encerrada (excluída) por um Administrador ou por você mesmo através do processo de anonimização.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="auth-container">
+        <div class="auth-wrapper">
+            <div class="welcome-section">
+                <div class="content">
+                    <img src="image.png" alt="Logo Task FlowUp" class="logo-img">
+                    <p class="lead">Organize suas tarefas e impulsione a produtividade da sua equipe.</p>
+                </div>
+            </div>
+            <div class="form-section">
+                <div id="login-section">
+                    <div class="form-box">
+                        <h2 class="form-title">Bem-vindo de volta!</h2>
+                        <form id="login-form">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                                <input type="text" id="username" name="username" class="form-control" placeholder="Nome de usuário" required>
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+                                <input type="password" id="password" name="password" class="form-control" placeholder="Senha" required>
+                            </div>
+                            <div id="login-error" class="error-message"></div>
+                            <button type="submit" class="btn btn-primary w-100">Entrar</button>
+                        </form>
+                        <div class="text-center mt-2">
+                            <a href="#" id="show-forgot-password" class="form-link">Esqueceu a senha?</a>
+                        </div>
+                        <hr>
+                        <p class="text-center">Não tem uma conta? <a href="#" id="show-register" class="form-link">Cadastre-se</a></p>
+                    </div>
+                </div>
+                
+                <div id="registration-section" style="display: none;">
+                    <div class="form-box">
+                        <h2 class="form-title">Crie sua Conta</h2>
+                        <form id="register-form">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                                <input type="text" id="register-username" name="register-username" class="form-control" placeholder="Nome de usuário" required>
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+                                <input type="password" id="register-password" name="register-password" class="form-control" placeholder="Senha" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="role" id="role-employee" value="funcionario" checked>
+                                    <label class="form-check-label" for="role-employee">Funcionário</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="role" id="role-admin" value="admin">
+                                    <label class="form-check-label" for="role-admin">Administrador</label>
+                                </div>
+                            </div>
+                            
+                            <div id="employee-fields">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                                    <input type="email" id="register-email" name="register-email" class="form-control" placeholder="Seu e-mail" required>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text"><i class="bi bi-briefcase-fill"></i></span>
+                                    <input type="text" id="register-job-title" name="register-job-title" class="form-control" placeholder="Seu Cargo (ex: Designer)">
+                                </div>
+                            </div>
+                            
+                            <div id="admin-fields" style="display: none;">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text"><i class="bi bi-key-fill"></i></span>
+                                    <input type="password" id="admin-key" name="admin-key" class="form-control" placeholder="Chave de Administrador">
+                                </div>
+                            </div>
+                            
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="true" id="register-consent" name="register-consent" required>
+                                <label class="form-check-label" for="register-consent" style="font-size: 0.85rem;">
+                                    Eu li e concordo com a 
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">
+                                        Política de Privacidade e Termos de Uso
+                                    </a>.
+                                </label>
+                            </div>
+                            
+                            <div id="register-error" class="error-message"></div>
+                            <button type="submit" class="btn btn-primary w-100">Registrar</button>
+                        </form>
+                        <hr>
+                        <p class="text-center">Já tem uma conta? <a href="#" id="show-login" class="form-link">Faça login</a></p>
+                    </div>
+                </div>
+                
+                <div id="forgot-password-section" style="display: none;">
+                    <div class="form-box">
+                        <h2 class="form-title">Recuperar Senha</h2>
+                        <p class="text-muted mb-3">Digite seu e-mail. Se uma conta for encontrada, instruções de redefinição serão processadas.</p>
+                        <form id="forgot-password-form">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                                <input type="email" id="forgot-email" class="form-control" placeholder="Seu e-mail" required>
+                            </div>
+                            <div id="forgot-feedback" class="error-message"></div>
+                            <button type="submit" class="btn btn-primary w-100">Redefinir Senha</button>
+                        </form>
+                        <hr>
+                        <p class="text-center">Lembrou a senha? <a href="#" id="show-login-from-forgot" class="form-link">Faça login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-container" style="display: none;">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="image.png" alt="Logo" class="sidebar-logo">
+                <span class="sidebar-title">Task FlowUp</span>
+            </div>
+            <ul class="list-unstyled components">
+                <li class="active" data-view="dashboard"><a href="#"><i class="bi bi-grid-1x2-fill"></i><span>Dashboard</span></a></li>
+                <li data-view="analytics"><a href="#"><i class="bi bi-bar-chart-line-fill"></i><span>Análise</span></a></li>
+                <li data-view="team"><a href="#"><i class="bi bi-people-fill"></i><span>Equipe</span></a></li>
+                <li id="nav-activity-log" data-view="log" style="display: none;"><a href="#"><i class="bi bi-clock-history"></i><span>Log de Atividades</span></a></li>
+                <li id="nav-ssap" data-view="ssap" style="display: none;"><a href="#"><i class="bi bi-person-vcard-fill"></i><span>SSAP (Usuários)</span></a></li>
+                <li data-view="profile"><a href="#"><i class="bi bi-person-circle"></i><span>Meu Perfil</span></a></li>
+            </ul>
+            <ul class="list-unstyled logout-section">
+                <li><a href="#" id="nav-logout"><i class="bi bi-box-arrow-left"></i><span>Sair</span></a></li>
+            </ul>
+        </nav>
+
+        <div id="content-wrapper">
+            <div id="impersonation-banner" style="display: none;">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+                Você está atualmente logado como <strong id="impersonation-username"></strong>.
+                <button id="stop-impersonation-btn" class="btn btn-sm btn-light">Retornar à sua conta</button>
+            </div>
+            
+            <header class="app-header">
+                <div class="header-left">
+                    <button type="button" id="sidebar-toggle" class="btn"><i class="bi bi-list"></i></button>
+                    <div id="header-search-container" class="header-search-container"></div>
+                </div>
+                <div id="header-user-info" class="ms-auto" style="cursor: pointer;" title="Ir para Meu Perfil">
+                    Olá, <strong id="header-username">Usuário</strong>!
+                </div>
+            </header>
+            <main id="main-content" class="container-fluid"></main>
+        </div>
+    </div>
+
+    <div class="modal fade" id="editTaskModal" tabindex="-1"></div>
+    <div class="modal fade" id="commentsModal" tabindex="-1"></div>
+
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="confirmationModalLabel">Confirmar Ação</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body" id="confirmation-modal-body">
+            Tem certeza que deseja excluir esta tarefa? Esta ação não pode ser desfeita.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-danger" id="confirm-action-btn">Confirmar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="chat-container" style="display: none;"></div>
+    
+    <div class="modal fade" id="forcePasswordResetModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Crie uma Nova Senha</h5>
+          </div>
+          <div class="modal-body">
+            <p>Por segurança, você precisa definir uma nova senha para continuar.</p>
+            <form id="force-reset-form">
+              <div class="input-group mb-3">
+                <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+                <input type="password" id="reset-new-password" class="form-control" placeholder="Nova Senha" required>
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+                <input type="password" id="reset-confirm-password" class="form-control" placeholder="Confirme a Nova Senha" required>
+              </div>
+              <div id="force-reset-error" class="error-message"></div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" form="force-reset-form" class="btn btn-primary">Salvar Nova Senha</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="adminUserEditModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Editar Usuário (Admin)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="admin-user-edit-form"></form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" form="admin-user-edit-form" class="btn btn-primary">Salvar Alterações</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
