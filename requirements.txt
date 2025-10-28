@@ -1,3 +1,3 @@
 Flask
-flask-mysqldb
+Flask-PyMySQL
 Flask-Cors
