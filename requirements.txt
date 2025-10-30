@@ -1,3 +1,0 @@
-Flask
-Flask-PyMySQL
-Flask-Cors
