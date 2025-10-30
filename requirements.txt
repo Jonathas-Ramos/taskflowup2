@@ -1,3 +1,4 @@
 Flask
-flask-mysqldb
 Flask-Cors
+psycopg2-binary
+gunicorn
